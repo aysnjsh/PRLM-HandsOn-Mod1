@@ -1,5 +1,5 @@
 <?php
-include "header.php";
+include "include/header.php";
 
 echo '<link rel="stylesheet" href="css/styles.css">';
 
@@ -7,8 +7,10 @@ $food1 = "Hinata Rolls";
 $food2 = "Kageyama Rice";
 $food3 = "Tsukishima Tea";
 $food4 = "Nishinoya Ramen";
+$food5 = "Kenma Balls";
+$food6 = "Oikawa Milktea";
 
-$foods = [$food1, $food2, $food3, $food4];
+$foods = [$food1, $food2, $food3, $food4, $food5, $food6];
 
 echo "<h2>Available Haikyuu-Themed Foods</h2>";
 
@@ -59,7 +61,7 @@ foreach ($foods as $food) {
 
 echo "<hr>";
 
-if (file_exists("footer.php")) {
-    require "footer.php";
+if (file_exists("include/footer.php")) {
+    require "include/footer.php";
 }
 ?>
